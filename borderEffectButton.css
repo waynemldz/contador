@@ -15,12 +15,14 @@
     background: rgba(30, 224, 134, 0.575);
     transition: 1s;
 }
-#container #start:hover i::before{
+#container #start:hover i::before,
+#container #continue:hover i::before{
     height: 100%;
     transition: 1s;
 }
 
-#container #start i::after {
+#container #start i::after,
+#container #continue i::after{
     content: '';
     inset: 2px;
     position: absolute;
@@ -93,4 +95,8 @@
     border-radius: 50%;
     background: #222;
     z-index: 3;
+}
+
+#container #continue{
+    display: none;
 }
