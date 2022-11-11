@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    pointer-events: none;
+}
+
+body {
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#container {
+    text-align: center;
+    position: relative;
+}
+
+#container div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 3em;
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    transition: .6s;
+}
+
+#container h2 {
+    z-index: 10;
+}
